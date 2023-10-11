@@ -19,7 +19,7 @@ except:
 
 
 key_args = {"main_model_name": "meta-llama/Llama-2-70b-hf",
-            "main_adapter_name": "xhan77/web-llama2chat-70b-adapter", # or "xhan77/web-llama2-70b-adapter"
+            "main_adapter_name": "xhan77/web-llama2-70b-adapter", # or "xhan77/web-llama2chat-70b-adapter"
             "main_context_condense_ratio": 4.0,
             "query_model_name": "meta-llama/Llama-2-13b-hf",
             "query_adapter_name": "xhan77/web-query-llama2-13b-adapter",
@@ -280,7 +280,7 @@ with torch.no_grad():
     # generate("https://huggingface.co/datasets/allenai/dolma")
     print("################")
     print("Welcome to WebLlama!")
-    print("To enter the question answering mode: answer(<prompt>), for example, answer(\"Write a short bio for Xiaochuang Han\")")
+    print("To enter the question answering mode: answer(<prompt>), for example, answer(\"I'm in Seattle. Should I wash my car today?\")")
     print("To enter the webpage reading mode: generate(<url>), for example, generate(\"https://huggingface.co/datasets/allenai/dolma\")")
     print("Have fun!")
     print("################")
